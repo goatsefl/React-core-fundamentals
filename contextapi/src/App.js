@@ -1,16 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import MessageContext from './context/MessageContext';
+import UserInfoContext from './context/UserInfoContext';
+import { useContext } from 'react';
+import BlogPage from './components/BlogPage';
 
 export default function App() {
-  const message = "Hello World"
+  const userInfo = { username: "Admin", isAdmin: true }
   return (
     <div>
-      <MessageContext.Provider value={message}>
+      <UserInfoContext.Provider value={userInfo}>
 
-      </MessageContext.Provider>
+      </UserInfoContext.Provider>
     </div>
   );
 }
-
-
