@@ -1,7 +1,7 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import UserInfoContext from './context/UserInfoContext';
-import { useContext } from 'react';
+// import { useContext } from 'react';
 import BlogPage from './components/BlogPage';
 
 export default function App() {
@@ -9,7 +9,7 @@ export default function App() {
   return (
     <div>
       <UserInfoContext.Provider value={userInfo}>
-
+        <BlogPage></BlogPage>
       </UserInfoContext.Provider>
     </div>
   );
