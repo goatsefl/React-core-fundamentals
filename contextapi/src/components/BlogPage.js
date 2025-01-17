@@ -8,7 +8,7 @@ export default function BlogPage() {
     return (
         <div>
             <h1>Blog</h1>
-            <Post username={userInfo.username} isAdmin={userInfo.isAdmin} theme={userInfo.theme}></Post>
+            <Post username={userInfo.username} isAdmin={userInfo.isAdmin}></Post>
         </div>
     )
 }
