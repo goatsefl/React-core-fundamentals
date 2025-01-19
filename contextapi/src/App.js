@@ -30,3 +30,5 @@ export default function App() {
     </div >
   );
 }
+// These .Provider is to get the value, that can be sent to nested child components,
+// If at all <UserInfoContext.Provider>{child}</UserInfoContext.Provider>, this is what we can do.
